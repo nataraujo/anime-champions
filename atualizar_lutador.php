@@ -1,4 +1,5 @@
 <!--UPDATE-->
+<!--teste de git-->
 <!--POST do editar_lutador-->
 <?php
  include 'conexao.php';
