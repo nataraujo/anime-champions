@@ -1,4 +1,4 @@
-     <?php
+     <?php//CONTROLE DE SESSÃO PRA VER SE ESTÁ LOGADO
           session_start();
       include 'verificar_login.php';
      ?>

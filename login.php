@@ -1,5 +1,5 @@
 <?php
-session_start();
+session_start();//CONTROLE DE SESSÃO PRA VER SE ESTÁ LOGADO
 include 'conexao.php';
 
 //Campos do html de login
