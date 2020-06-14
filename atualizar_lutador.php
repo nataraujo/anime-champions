@@ -1,6 +1,7 @@
-<!--UPDATE-->
-<!--teste de git-->
-<!--POST do editar_lutador-->
+     <?php
+    session_start();
+      include 'verificar_login.php';
+     ?>
 <?php
  include 'conexao.php';
 
