@@ -10,7 +10,7 @@ $mes = $_POST['mes'];
 
 //$file = $_POST['file'];
 
-$sql = "INSERT INTO `lutadores`( `nome`, `nota`, `mes`) VALUES ('$nome',$nota,'$mes')";  //inserir dados no banco
+$sql = "INSERT INTO `lutadores`( `nome`, `nota`, `mes`) VALUES ('$nome',$nota,$mes)";  //inserir dados no banco
 $results = $conexao->query($sql);
 
 ?>
@@ -24,19 +24,17 @@ $results = $conexao->query($sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>alert</title>
+    <style>
+    body{
+     background-color:black;   
+    }
+    </style>
 </head>
 <body>
-<div class="container" id="card-votacao">
-        <div class="card" style="width: 18rem;">
-        <img src="https://uploads.mixer.com/avatar/2evg7cnb-101052282.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <p class="card-text">Lutador Adicionado!</p>
-        </div>   
-        <a href="index.php" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">index</a>
-        <a href="form.php" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Form</a>
-            </div>
- </div>
-
+<div class="alert alert-primary" role="alert">
+  Lutador indicado com sucesso. Volte para a <a href="index.php" class="alert-link"> Página Inicial </a>. Obrigada!.
+</div>
+</div>
  <!-- JS, Popper.js, and jQuery -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

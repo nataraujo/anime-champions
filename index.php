@@ -1,7 +1,11 @@
-     <?php
+<?php
           session_start();
       include 'verificar_login.php';
+      include_once("conexao.php");
      ?>
+
+
+
 <!DOCTYPE html>
 <html>
 
@@ -37,7 +41,7 @@
 
 <body>
 
-    <div class="body_bg">
+    <div class="body_bg" id="topo">
         <!--::header part start::-->
         <header class="main_menu single_page_menu">
             <div class="container">
@@ -78,7 +82,7 @@
 
         <!-- banner part start-->
         <section class="">
-            <div class="container">
+            <div class="container" >
                 <div class="row align-items-center justify-content-between">
                     <div class="col-lg-6 col-md-8">
                         <div class="banner_text">
@@ -100,17 +104,13 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-md-5 col-lg-6 col-xl-6">
                         <div class="learning_img">
-                            <img src="img/about_img.png" alt="">
+                            <img src="img/tobirama.png" alt="">
                         </div>
                     </div>
                     <div class="col-md-7 col-lg-6 col-xl-5">
                         <div class="about_us_text">
                             <h2>Aqui você tem duas opções</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit sed do eiusmod tempor incididunt ut labore et
-                                dolore magna aliqua. </p>
-                            <a href="#" class="btn_1">Lutadores</a>
-                            <a href="#" class="btn_1">Escolher Lutador</a>
+                            <a href="#lutadores" class="btn_1">Lutadores</a>                         
                         </div>
                     </div>
                 </div>
@@ -125,79 +125,79 @@
                     <div class="col-md-2 offset-lg-2 offset-sm-1">
                         <div class="live_stareams_text">
                             <h2>youtube <br> Lutas</h2>
-                            <div class="btn_1">install now</div>
+                            
                         </div>
                     </div>
                     <div class="col-md-7 offset-sm-1">
                         <div class="live_stareams_slide owl-carousel">
                             <div class="live_stareams_slide_img">
-                                <img src="img/live_streams_1.png" alt="">
+                                <img src="img/mg1.png" alt="">
                                 <div class="extends_video">
                                     <a id="play-video_1" class="video-play-button popup-youtube"
-                                        href="https://www.youtube.com/watch?v=pBFQdxA-apI">
+                                        href="https://www.youtube.com/watch?v=4yEm8XRIIbE"> <!--ashura-->
                                         <span class="fas fa-play"></span>
                                     </a>
                                 </div>
                             </div>
                             <div class="live_stareams_slide_img">
-                                <img src="img/live_streams_2.png" alt="">
+                                <img src="img/img2.jpg" alt="">
                                 <div class="extends_video">
                                     <a id="play-video_1" class="video-play-button popup-youtube"
-                                        href="https://www.youtube.com/watch?v=pBFQdxA-apI">
+                                        href="https://www.youtube.com/watch?v=5zU8htCuqW8"> <!--baki-->
                                         <span class="fas fa-play"></span>
                                     </a>
                                 </div>
                             </div>
                             <div class="live_stareams_slide_img">
-                                <img src="img/live_streams_1.png" alt="">
+                                <img src="img/img3.jpg" alt="">
                                 <div class="extends_video">
                                     <a id="play-video_1" class="video-play-button popup-youtube"
-                                        href="https://www.youtube.com/watch?v=pBFQdxA-apI">
+                                        href="https://www.youtube.com/watch?v=FUpza22te6g"> <!--saitama-->
                                         <span class="fas fa-play"></span>
                                     </a>
                                 </div>
                             </div>
                             <div class="live_stareams_slide_img">
-                                <img src="img/live_streams_2.png" alt="">
+                                <img src="img/img4.jpg" alt="">
                                 <div class="extends_video">
                                     <a id="play-video_1" class="video-play-button popup-youtube"
-                                        href="https://www.youtube.com/watch?v=pBFQdxA-apI">
+                                        href="https://www.youtube.com/watch?v=EeCrTPjgSNI"> <!--levi-->
                                         <span class="fas fa-play"></span>
                                     </a>
                                 </div>
                             </div>
                             <div class="live_stareams_slide_img">
-                                <img src="img/live_streams_1.png" alt="">
+                                <img src="img/img5.png" alt="">
                                 <div class="extends_video">
                                     <a id="play-video_1" class="video-play-button popup-youtube"
-                                        href="https://www.youtube.com/watch?v=pBFQdxA-apI">
+                                        href="https://www.youtube.com/watch?v=OSyKhqDsW14"> <!-- goku--->
                                         <span class="fas fa-play"></span>
                                     </a>
                                 </div>
                             </div>
                             <div class="live_stareams_slide_img">
-                                <img src="img/live_streams_2.png" alt="">
+                                <img src="img/img6.jpg" alt="">
                                 <div class="extends_video">
                                     <a id="play-video_1" class="video-play-button popup-youtube"
-                                        href="https://www.youtube.com/watch?v=pBFQdxA-apI">
+                                        href="https://www.youtube.com/watch?v=wK8FFkqJGck"><!-- riu--->
                                         <span class="fas fa-play"></span>
                                     </a>
                                 </div>
                             </div>
                             <div class="live_stareams_slide_img">
-                                <img src="img/live_streams_1.png" alt="">
+                                <img src="img/img7.png" alt="">
                                 <div class="extends_video">
                                     <a id="play-video_1" class="video-play-button popup-youtube"
-                                        href="https://www.youtube.com/watch?v=pBFQdxA-apI">
+                                        href="https://www.youtube.com/watch?v=CV7nWKnxVRQ"> <!-- kimetsu--->
                                         <span class="fas fa-play"></span>
                                     </a>
                                 </div>
                             </div>
                             <div class="live_stareams_slide_img">
-                                <img src="img/live_streams_2.png" alt="">
+                                <img src="img/img8.jpg" alt="">
                                 <div class="extends_video">
                                     <a id="play-video_1" class="video-play-button popup-youtube"
-                                        href="https://www.youtube.com/watch?v=pBFQdxA-apI">
+                                        href="https://www.youtube.com/watch?v=ptg9nLLlzfA"><!-- extra--->
                                         <span class="fas fa-play"></span>
                                     </a>
                                 </div>
@@ -218,8 +218,8 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-5">
-                        <div class="section_tittle text-center">
-                            <h2>All Fighter</h2>
+                        <div class="section_tittle text-center" id="lutadores">
+                            <h2 >Lutadores</h2>
                         </div>
                     </div>
                 </div>
@@ -228,9 +228,9 @@
                         <div class="gallery_part_item">
                             <div class="grid">
                                 <div class="grid-sizer"></div>
-                                <a href="img/gallery/gallery_item_1.png"
+                                <a href="img/gallery/img1.jpg"
                                     class="grid-item bg_img img-gal grid-item--height-1"
-                                    style="background-image: url('img/gallery/gallery_item_1.png')">
+                                    style="background-image: url('img/gallery/img1.jpg')">
                                     <div class="single_gallery_item">
                                         <div class="single_gallery_item_iner">
                                             <div class="gallery_item_text">
@@ -239,8 +239,8 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="img/gallery/gallery_item_2.png" class="grid-item bg_img img-gal"
-                                    style="background-image: url('img/gallery/gallery_item_2.png')">
+                                <a href="img/gallery/img2.jpg" class="grid-item bg_img img-gal"
+                                    style="background-image: url('img/gallery/img2.jpg')">
                                     <div class="single_gallery_item">
                                         <div class="single_gallery_item_iner">
                                             <div class="gallery_item_text">
@@ -249,8 +249,8 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="img/gallery/gallery_item_3.png" class="grid-item bg_img img-gal"
-                                    style="background-image: url('img/gallery/gallery_item_3.png')">
+                                <a href="img/gallery/img/gallery/img4.jfif" class="grid-item bg_img img-gal"
+                                    style="background-image: url('img/gallery/img4.jfif')">
                                     <div class="single_gallery_item">
                                         <div class="single_gallery_item_iner">
                                             <div class="gallery_item_text">
@@ -259,9 +259,9 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="img/gallery/gallery_item_5.png"
+                                <a href="img/gallery/img5.jfif"
                                     class="grid-item bg_img img-gal grid-item--height-2"
-                                    style="background-image: url('img/gallery/gallery_item_5.png')">
+                                    style="background-image: url('img/gallery/img5.jfif')">
                                     <div class="single_gallery_item">
                                         <div class="single_gallery_item_iner">
                                             <div class="gallery_item_text">
@@ -270,9 +270,9 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="img/gallery/gallery_item_7.png"
+                                <a href="img/gallery/img/gallery/img3.jfif"
                                     class="grid-item bg_img img-gal grid-item--height-2"
-                                    style="background-image: url('img/gallery/gallery_item_7.png')">
+                                    style="background-image: url('img/gallery/img3.jfif')">
                                     <div class="single_gallery_item">
                                         <div class="single_gallery_item_iner">
                                             <div class="gallery_item_text">
@@ -281,9 +281,9 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="img/gallery/gallery_item_6.png"
+                                <a href="img/galleryimg6.jfif"
                                     class="grid-item bg_img img-gal grid-item--width-1"
-                                    style="background-image: url('img/gallery/gallery_item_6.png')">
+                                    style="background-image: url('img/gallery/img6.jfif')">
                                     <div class="single_gallery_item">
                                         <div class="single_gallery_item_iner">
                                             <div class="gallery_item_text">
@@ -292,9 +292,9 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="img/gallery/gallery_item_4.png"
+                                <a href="img/gallery/img7.jfif"
                                     class="grid-item bg_img img-gal sm_weight  grid-item--height-1"
-                                    style="background-image: url('img/gallery/gallery_item_4.png')">
+                                    style="background-image: url('img/gallery/img7.jfif')">
                                     <div class="single_gallery_item">
                                         <div class="single_gallery_item_iner">
                                             <div class="gallery_item_text">
@@ -317,57 +317,141 @@
 
         <!-- pricing part start-->
         <!-- Escolher lutador - lista 1-->
+  <!-- form php-->
+
         <section class="pricing_part padding_top">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="section_tittle text-center">
-                            <h2>Escolha seu Lutador</h2>
+                            <h2>Informações dos Lutadores </h2>
                         </div>
                     </div>
                 </div>
+               
                 <div class="row justify-content-center">
                     <div class="col-lg-3 col-sm-6">
                         <div class="single_pricing_part">
-                            <p>Saitama</p>
-                            <h3>Descrição</h3>
+ <form action="votar.php">
+                            <p>Baki the champion</p>
+                            <h3>Baki</h3>
                             <ul>
-                                <li>velocidade</li>
-                                <li>Super soco</li>
-                                <li>Anime: One puch man</li>
+                                <li>Artista marcial; Estudante; Lutador.</li>
+                                <li>Altura: 1,78; Peso: 68kg</li>
+                                <li>Características Físicas Sobre-Humanas, Super sentido</li>
+                                <li>Regeneração, Resistência (Dolorosa,Venenosa e Mental)</li>
+                                
                             </ul>
-                            <a href="#" class="btn_2">Selecionar</a>
+
+                            <?php
+                            if(isset($_SESSION['msg'])){
+                                //Imprimir o valor da sessão
+                                echo $_SESSION['msg'];
+                                //Destruir a sessão com PHP
+                                unset($_SESSION['msg']);
+                            }
+	
+    //Criar a QUERY para pesquisar os produtos no banco de dados
+    $sql = "SELECT * FROM lutadores WHERE id IN (1)";
+    //Executar a QUERY para pesquisar os produtos no banco de dados com o MySQLi
+    $r_voto = mysqli_query($conexao, $sql);
+    
+    //Usar o while para percorrer os dados trazidos do banco de dados
+    while($row_voto = mysqli_fetch_assoc($r_voto)){
+     //Criar o link para o usuário poder votar no produto
+     echo "Quantidade de voto:  " . $row_voto['nota'] . "<br>";
+	
+			//Criar o link para o usuário poder votar no produto
+			echo "<a href='votar.php?id=".$row_voto['id']."'>Votar</a><br><hr>";
+       
+ }
+?>
+                           
+                           
+                    
                         </div>
                     </div>
+</form>          
                     <div class="col-lg-3 col-sm-6">
                         <div class="single_pricing_part">
-                            <p>Goku</p>
-                            <h3>Descrição</h3>
+<form action="votar.php">
+                            <p>Kengan Ashura</p>
+                            <h3>Ohma</h3>
                             <ul>
-                                <li>Poder sobrenatural</li>
-                                <li>Força</li>
-                                <li>Anime: Dragon Ball</li>
+                                <li>Artista marcial; Praticante do estilo Niko.</li>
+                                <li>Altura: 1,82 metros; Peso: 85 kg</li>
+                                <li>Características Físicas Sobre-Humanas, Regeneração(Rank K)</li>
+                                <li>Manipulação da Memória, Selamento</li>
                             </ul>
-                            <a href="#" class="btn_2">Selecionar</a>
+                            <?php
+                            if(isset($_SESSION['msg'])){
+                                //Imprimir o valor da sessão
+                                echo $_SESSION['msg'];
+                                //Destruir a sessão com PHP
+                                unset($_SESSION['msg']);
+                            }
+	
+    //Criar a QUERY para pesquisar o id do lutador no banco de dados
+    $sql = "SELECT * FROM lutadores WHERE id IN (2)";
+    //Executar a QUERY para pesquisar os lutadores no banco de dados com o MySQLi
+    $r_voto = mysqli_query($conexao, $sql);
+    
+    //Usar o while para percorrer os dados trazidos do banco de dados
+    while($row_voto = mysqli_fetch_assoc($r_voto)){
+   
+		//Imprimir a quantidade de votos que o produto tem salvo no banco de dados
+        echo "Quantidade de voto:  " . $row_voto['nota'] . "<br>";
+			//Criar o link para o usuário poder votar no produto
+			echo "<a href='votar.php?id=".$row_voto['id']."'>Votar</a><br><hr>";
+       
+ }
+?>   
+                         
                         </div>
                     </div>
+</form>  
                     <div class="col-lg-3 col-sm-6">
                         <div class="single_pricing_part">
-                            <p>Silver Package</p>
-                            <h3>$80.00</h3>
+<form action="votar.php">                        
+                            <p>Street Fighter</p>
+                            <h3>Ryu</h3>
                             <ul>
-                                <li>2GB Bandwidth</li>
-                                <li>Two Account</li>
-                                <li>15GB Storage</li>
+                                <li>Lutador; Artista Marcial</li>
+                                <li>Altura: 1,92 metros; Peso: 89 kg</li>
+                                <li>Super Força, Resistência, Velocidade e Agilidade</li>
+                                <li>Manipulação do Fogo e Eletricidade,capaz de realizar raciocínios frios e lógicos</li>
                             </ul>
-                            <a href="#" class="btn_2">Selecionar</a>
+                            <?php
+                            if(isset($_SESSION['msg'])){
+                                //Imprimir o valor da sessão
+                                echo $_SESSION['msg'];
+                                //Destruir a sessão com PHP
+                                unset($_SESSION['msg']);
+                            }
+	
+    //Criar a QUERY para pesquisar o id do lutador no banco de dados
+    $sql = "SELECT * FROM lutadores WHERE id IN (3)";
+    //Executar a QUERY para pesquisar os lutadores no banco de dados com o MySQLi
+    $r_voto = mysqli_query($conexao, $sql);
+    
+    //Usar o while para percorrer os dados trazidos do banco de dados
+    while($row_voto = mysqli_fetch_assoc($r_voto)){
+		//Imprimir a quantidade de votos que o produto tem salvo no banco de dados
+        echo "Quantidade de voto:  " . $row_voto['nota'] . "<br>";
+			//Criar o link para o usuário poder votar no produto
+			echo "<a href='votar.php?id=".$row_voto['id']."'>Votar</a><br><hr>";
+       
+ }
+?>  
+                           
                         </div>
                     </div>
                 </div>
             </div>
+</form>             
         </section>
         <!-- pricing part end-->
-
+        
         <!-- Escolher lutador - lista 2-->
         <section class="pricing_part padding_top">
             <div class="container">
@@ -381,43 +465,124 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-3 col-sm-6">
                         <div class="single_pricing_part">
-                            <p>Saitama</p>
-                            <h3>Descrição</h3>
+
+<form action="votar.php">   
+                            <p>Shingeki no Kyojin</p>
+                            <h3>Levi Ackerman</h3>
+                          
                             <ul>
-                                <li>velocidade</li>
-                                <li>Super soco</li>
-                                <li>Anime: One puch man</li>
+                                <li>Capitão - Tropa de Exploração</li>
+                                <li>Altura: 160; Peso: 65kg</li>
+                                <li>Agilidade, alta resistência,Rank S,força física formidável</li>
+                                <li> analizar situações e tomar decisões calculistas no calor da batalha</li>
                             </ul>
-                            <a href="#" class="btn_2">Selecionar</a>
+                            <?php
+                             if(isset($_SESSION['msg'])){
+                                //Imprimir o valor da sessão
+                                echo $_SESSION['msg'];
+                                //Destruir a sessão com PHP
+                                unset($_SESSION['msg']);
+                            }
+	
+    //Criar a QUERY para pesquisar o id do lutador no banco de dados
+    $sql = "SELECT * FROM lutadores WHERE id IN (4)";
+    //Executar a QUERY para pesquisar os lutadores no banco de dados com o MySQLi
+    $r_voto = mysqli_query($conexao, $sql);
+    
+    //Usar o while para percorrer os dados trazidos do banco de dados
+    while($row_voto = mysqli_fetch_assoc($r_voto)){
+  
+		//Imprimir a quantidade de votos que o produto tem salvo no banco de dados
+        echo "Quantidade de voto:  " . $row_voto['nota'] . "<br>";
+			//Criar o link para o usuário poder votar no produto
+            echo "<a href='votar.php?id=".$row_voto['id']."'>Votar</a><br><hr>";
+        }
+        ?>
+                           
                         </div>
                     </div>
+  </form>                  
                     <div class="col-lg-3 col-sm-6">
                         <div class="single_pricing_part">
-                            <p>Goku</p>
-                            <h3>Descrição</h3>
+<form action="votar.php">   
+                            <p>One Puch man</p>
+                             <h3>Saitama</h3>
                             <ul>
-                                <li>Poder sobrenatural</li>
-                                <li>Força</li>
-                                <li>Anime: Dragon Ball</li>
+                                <li>Humano, Herói</li>
+                                <li>Força Imensurável, Velocidade e Reflexos Imensuráveis</li>
+                                <li>Vigor Infinito,entidos Sobrenaturais, Invulnerabilidade</li>
+                                <li>Imunidade Psíquica, Negação, Velocidade da Luz, Estamina extremamente alta, e Classe B.</li>
                             </ul>
-                            <a href="#" class="btn_2">Selecionar</a>
+                            <?php
+                             if(isset($_SESSION['msg'])){
+                                //Imprimir o valor da sessão
+                                echo $_SESSION['msg'];
+                                //Destruir a sessão com PHP
+                                unset($_SESSION['msg']);
+                            }
+	
+    //Criar a QUERY para pesquisar o id do lutador no banco de dados
+    $sql = "SELECT * FROM lutadores WHERE id IN (5)";
+    //Executar a QUERY para pesquisar os lutadores no banco de dados com o MySQLi
+    $r_voto = mysqli_query($conexao, $sql);
+    
+    //Usar o while para percorrer os dados trazidos do banco de dados
+    while($row_voto = mysqli_fetch_assoc($r_voto)){
+   
+		//Imprimir a quantidade de votos que o produto tem salvo no banco de dados
+        echo "Quantidade de voto:  " . $row_voto['nota'] . "<br>";
+			//Criar o link para o usuário poder votar no produto
+            echo "<a href='votar.php?id=".$row_voto['id']."'>Votar</a><br><hr>";
+        }
+        ?>
                         </div>
                     </div>
+  </form>                    
                     <div class="col-lg-3 col-sm-6">
+ 
                         <div class="single_pricing_part">
-                            <p>Silver Package</p>
-                            <h3>$80.00</h3>
+ <form action="votar.php"> 
+                            <p>Dragon Ball</p>
+                            <h3>Goku</h3>
                             <ul>
-                                <li>2GB Bandwidth</li>
-                                <li>Two Account</li>
-                                <li>15GB Storage</li>
+                                <li>Saiyajin</li>
+                                <li>Altura: 1,75; Peso:  62kg</li>
+                                <li>Voar,Super Força,Velocidade: Massivamente Hipersônico, Mestre de Artes Marciais</li>
+                                <li>Super Precisão, Percepção de Energia, Teletransporte,Super Punho do Dragão,várias transformações.</li>
+                                
                             </ul>
-                            <a href="#" class="btn_2">Selecionar</a>
+                            <?php
+                             if(isset($_SESSION['msg'])){
+                                //Imprimir o valor da sessão
+                                echo $_SESSION['msg'];
+                                //Destruir a sessão com PHP
+                                unset($_SESSION['msg']);
+                            }
+	
+    //Criar a QUERY para pesquisar o id do lutador no banco de dados
+    $sql = "SELECT * FROM lutadores WHERE id IN (6)";
+    //Executar a QUERY para pesquisar os lutadores no banco de dados com o MySQLi
+    $r_voto = mysqli_query($conexao, $sql);
+    
+    //Usar o while para percorrer os dados trazidos do banco de dados
+    while($row_voto = mysqli_fetch_assoc($r_voto)){
+   
+		//Imprimir a quantidade de votos que o produto tem salvo no banco de dados
+        echo "Quantidade de voto:  " . $row_voto['nota'] . "<br>";
+			//Criar o link para o usuário poder votar no produto
+            echo "<a href='votar.php?id=".$row_voto['id']."'>Votar</a><br><hr>";
+        }
+        ?>
+
+                           
+                          
                         </div>
                     </div>
                 </div>
             </div>
+ </form>           
         </section>
+
 
 
         <!--::footer_part start::-->
@@ -446,27 +611,32 @@
                         <div class="col-sm-6 col-lg-3">
                             <div class="single_footer_part">
                                 
-                                <div id="mc_embed_signup">
-                                    <form target="_blank"
-                                        action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                                        method="get" class="subscribe_form relative mail_part">
-                                        <input type="email" name="email" id="newsletter-form-email"
-                                            placeholder="Email Address" class="placeholder hide-on-focus"
-                                            onfocus="this.placeholder = ''"
-                                            onblur="this.placeholder = ' Email Address '">
-                                        <button type="submit" name="submit" id="newsletter-submit"
-                                            class="email_icon newsletter-submit button-contactForm"><i
-                                                class="far fa-paper-plane"></i></button>
-                                        <div class="mt-10 info"></div>
+                               
+                                        <div class="mt-10 info">
+                                        <div class="about_us_text">
+                                        <a href="form.php" class="btn_1">Indicar lutadores</a>
+                                        <br><br>
+                                        </div>
+                                    
+                        <div class="col-md-7 col-lg-6 col-xl-5">
+                        <div class="about_us_text">
+                            <a href="#topo" class="btn_1">Topo</a>
+                            
+                           
+                        </div>
+                        <br><br>
                                     </form>
+                    
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
             <div class="copygight_text">
                 <div class="container">
+                    
                     <div class="row align-items-center">
                         <div class="col-lg-8">
                             <div class="copyright_text">
