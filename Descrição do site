@@ -1,0 +1,16 @@
+#Ao entrar na página http://www.bekochampion.xyz/login.html, você será redirecionado a tela de login, pois a página principal tem acesso restrito somente a quem tem usuario.
+#No login faça seu cadastro ou entre com uma conta existente.
+
+#Na Página de cadastro, informe seu email, usuario e senha, onde email e senha será utilizado para fazer login logo após o registro!
+#No index, tem a opção de SAIR, para deslogar do site, LUTADORES, onde aparece uma prévia de cada um dos mesmo.
+#Há logo acima dos lutadores, videos curtos com cada um envolvido em uma luta sua ou de seu anime/filme/jogo.
+#Abaixo da prévia há uma Informação dos lutadores, onde cada um tem sua descrição com suas habilidades bem como suas descrições físicas e capacidades,
+#além de um botao de Votar em cada um os mesmos.
+
+#E há 2 botões restantes, TOPO para redirecionamento ao topo e de indicar um lutador, onde você irá enviar nome nota e o semestre do lutador, onde será armazenado em nosso banco, 
+#tudo como sugestão.
+#Após a indicação, será redirecionado uma página de agradecimento, onde precisará clicar em PÁGINA INICIAL para ser redirecionado ao index novamente.
+#Nota: Será adicionado novos lutadores a medida do necessário.
+
+
+#Espero que goste, e assim como os autores, o intuito é aprender e se divertir!
